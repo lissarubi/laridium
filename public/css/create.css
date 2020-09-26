@@ -1,0 +1,46 @@
+.createArticles{
+    margin-top: 30vh;
+    margin-left: 3vw;
+    color: #333;
+    width: 100vw;
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    width: 100%;
+    margin-bottom: 5vh;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2ch;
+}
+.body {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2ch;
+}
+.submit{
+    padding: 0.5em;
+    width: 90%;
+    font-size: 3ch;
+    border-style: solid;
+    background-color: #4638CF;
+    border-color: #4638CF;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vh;
+    color: white;
+    display: flex;
+}

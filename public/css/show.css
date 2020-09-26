@@ -1,0 +1,14 @@
+.showConteiner {
+    text-align: justify;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.showTitle {
+}
+.showBody {
+    width: 90%;
+}
