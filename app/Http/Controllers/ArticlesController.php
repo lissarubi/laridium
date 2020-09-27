@@ -12,6 +12,8 @@ class ArticlesController extends Controller
     {
         $user = User::find($user);
         $articles = $user->articles;
+
+        $likes = (auth()->user()) ? auth()->user()->liking->contains($user) : 'like'; 
         return view('articles/index', compact('user', 'articles'));
     }
     public function create()
@@ -36,6 +38,8 @@ class ArticlesController extends Controller
     public function show($article)
     {
         $article = Articles::find($article);
-        return view('/articles/show', compact('article'));
+
+        $likes = (auth()->user()) ? auth()->user()->liking->contains($article->user_id) : 'like'; 
+        return view('/articles/show', compact('article', 'likes'));
     }
 }

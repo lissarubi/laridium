@@ -13,4 +13,8 @@ class Articles extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function liking()
+    {
+        return $this->belongsToMany(User::class, 'article_id');
+    }
 }
